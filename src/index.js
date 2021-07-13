@@ -16,8 +16,8 @@ const juniorDiscount = (ticketFare * 20) / 100;
 const seniorDiscount = (ticketFare * 40) / 100;
 
 if(userAge <18){
-    console.log("Your ticket will cost: " + "£" + (ticketFare-juniorDiscount).toFixed(2));
+    console.log("As an underage, you get 20% discount, so your ticket will cost: " + "£" + (ticketFare-juniorDiscount).toFixed(2));
 }   else if (userAge >=65){
-    console.log("Your ticket will cost: " + "£" + (ticketFare-seniorDiscount).toFixed(2));
+    console.log("As a senior, you get 40% discount, so your ticket will cost: " + "£" + (ticketFare-seniorDiscount).toFixed(2));
 }   else {console.log("Your ticket will cost: " + "£" + ticketFare);
 }
